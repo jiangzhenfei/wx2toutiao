@@ -2,7 +2,7 @@
 
 1.下载当前的文件
 ```node
-git clone https://github.com/jiangzhenfei/swan2toutiao.git
+git clone https://github.com/jiangzhenfei/wx2toutiao.git
 ```
 2.将wx2toutiao.js复制到你微信程序的app.json目录下
 ```html
