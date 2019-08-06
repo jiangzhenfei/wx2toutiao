@@ -19,7 +19,8 @@ node wx2toutiao.js
 ```
 执行结束后已经将所有微信小程序的转成头条小程序了
 
-#### 注意事项
+#### 注意事项 由于并没有转ttss样式文件中引入其他的样式文件，导致引入报错，请手动把ttss引入其他的@import "color.wxss"等修改为 @import "color.ttss"
+
 ##### 微信小程序支持在wxml内部数据绑定中使用function,但是在头条小程序都是不支持的，以下类型都将导致程序报错
 ```html
 <view>{{ (1) }}</view>
