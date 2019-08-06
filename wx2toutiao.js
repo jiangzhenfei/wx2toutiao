@@ -78,7 +78,7 @@ function reNameFile( path,newPath ){
 function amendText( path ,callback){
     fs.readFile(path,'utf8',function(err,files){
         console.log(err,files)
-        var result = files.replace(/wx:for/g,'tt:for').replace(/wx:if/g,'tt:if').replace(/wx:for-item/g,'tt:for-item').replace(/wx:for-index/g,'tt:for-index').replace(/wx:key/g,'tt:key');
+        var result = files.replace(/wx:for/g,'tt:for').replace(/wx:if/g,'tt:if').replace(/wx:for-item/g,'tt:for-item').replace(/wx:for-index/g,'tt:for-index').replace(/wx:key/g,'tt:key').replace(/\.wxml/g,'.ttml');
         //var result = files.replace(/s-if/g,'tt:if');
         
         fs.writeFile( path, result, 'utf8', function (err) {
